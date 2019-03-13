@@ -1,14 +1,55 @@
-<Html>
-<Head>
-<title> My first site </title>
-</Head>
-<BODY bgcolor=#FFA500>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+	<style type="text/css">
+		button{
+			width:100%;
+			height:50px;
+			text-align: left;
+			border:none;
+			background-color: none;
+		}
+		.text{
+			padding:1%;
+			font-size: 125%
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<button id="name" onclick="a(0)">Браузер</button>
+		<div class="text" style="display: none">
+			Бра́узер, також веб-переглядач (англ. browser МФА: [ˈbraʊ̯zɚ] — переглядач) — програмне забезпечення для комп'ютера або іншого електронного пристрою, як правило, під'єднаного до Інтернету, що дає можливість користувачеві взаємодіяти з текстом, малюнками або іншою інформацією на гіпертекстовій веб-сторінці.
+		</div>
+		<button id="name" onclick="a(1)">Веб-сторінка</button>
+		<div class="text" style="display: none">
+			Веб-сторінка (англ. Web-page) — інформаційний ресурс, доступний в мережі World Wide Web (Всесвітня павутина), який можна переглянути у веб-браузері.
+		</div>
+		<button id="name" onclick="a(2)">Веб-сайт</button>
+		<div class="text" style="display: none">
+			Сайт, або веб-сайт (від англ. website, місце, майданчик в інтернеті) — сукупність веб-сторінок, доступних у мережі Інтернет, які об'єднані як за змістом, так і за навігацією під єдиним доменним ім'ям. Фізично сайт може розміщуватися як на одному, так і на кількох серверах.
+		</div>
+		<button id="name" onclick="a(3)">Хостинг</button>
+		<div class="text" style="display: none">
+			Хо́стинг (англ. hosting) — послуга, що включає надання дискового простору, підключення до мережі та інших ресурсів для розміщення фізичної інформації на сервері, що постійно перебуває в мережі (наприклад Internet).
+		</div>
+		<button id="name" onclick="a(4)">Інформаційне наповнення сайту</button>
+		<div class="text" style="display: none">
+			Інформаці́йне напо́внення са́йту (англ. content, вміст)  — це інформація чи досвід, який направлений на кінцевих користувачів чи аудиторію., яку розробник складає самостійно або копіює з дотриманням чинного законодавства.-->
+		</div>
+	</table>
 
 
-
-Hello, World!
-
-
-
-</BODY>
+	<script type="text/javascript">
+		function a(x){
+			if (document.getElementsByClassName('text')[x].style.cssText=="display: block;"){
+				document.getElementsByClassName('text')[x].style="display:none;";
+			}
+			else{
+				document.getElementsByClassName('text')[x].style="display:block;";
+			}
+		}
+</script>
+</body>
 </html>
