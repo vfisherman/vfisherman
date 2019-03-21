@@ -1,14 +1,95 @@
-<Html>
-<Head>
-<title> My first site </title>
-</Head>
-<BODY bgcolor=#FF0000>
-
-
-
-Hello, World!
-
-
-
-</BODY>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			margin: 0 25%;
+		}
+		table{
+			margin: 0 25%;
+			padding:0;
+			margin:0;
+			text-align: center;
+			border: 1px solid black;
+ 			border-collapse: collapse;
+		}
+		.days{
+			width: 80px;
+		}
+		#week{
+			width:4px;
+		}
+		#names{
+			background-color: #3b3838;
+			color:#fff;
+		}
+		caption{
+			padding:5px;
+			font-size: 175%;
+		}
+		#num,#nums,#numd{
+			font-size: 260%;
+			height:45px;
+			font-weight: bold;
+		}
+		.days.sub{
+			background-color: #7030a0;
+		}
+		.days.ned{
+			background-color: #c00;
+		}
+		#nums{
+			color: #73a;
+		}
+		#numd{
+			color:#c00;
+		}
+	</style>
+</head>
+<body>
+		<table border>
+			<caption><b>
+				Серпень 2018
+			</b></caption>
+			<tr id="names">
+				<td id="week">
+					T
+				</td>
+				<td class="days">
+					Понеділок
+				</td>
+				<td class="days">
+					Вівторок
+				</td>
+				<td class="days">
+					Середа
+				</td>
+				<td class="days">
+					Четвер
+				</td>
+				<td class="days">
+					П'ятниця
+				</td>
+				<td class="days sub">
+					Судота
+				</td>
+				<td class="days ned">
+					Неділя
+				</td>
+			</tr>
+			<tr> 
+				<td class='t'>
+					31
+				</td>
+				<td></td><td></td><td id="num">1</td><td id="num">2</td><td id="num">3</td><td id="nums">4</td><td id="numd">5</td>
+			</tr>
+			<tr><td>32</td><td id="num">6</td><td id="num">7</td><td id="num">8</td><td id="num">9</td><td id="num">10</td><td  id="nums">11</td><td id="numd">12</td></tr>
+			<tr><td>33</td><td id="num">13</td><td id="num">14</td><td id="num">15</td><td id="num">16</td><td id="num">17</td><td id="nums">18</td><td id="numd">19</td></tr>
+			<tr><td>34</td><td id="num">20</td><td id="num">21</td><td id="num">22</td><td id="num">23</td><td id="num">24</td><td id="nums">25</td><td  id="numd">26</td></tr>
+			<tr><td>35</td><td id="num">27</td><td id="num">29</td><td id="num">30</td><td id="num">31</td><td id="num"></td><td id="nums"></td><td id="numd"></td></tr>
+			<tr><td>36</td><td id="num"></td><td></td><td></td><td></td><td></td><td id="nums"></td><td id="numd"></td></tr>
+		</table>
+</body>
 </html>
