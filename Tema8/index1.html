@@ -1,14 +1,65 @@
-<Html>
-<Head>
-<title> My first site </title>
-</Head>
-<BODY bgcolor=#FF0000>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Class</title>
+ <style type="text/css">
+ 	* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body {
+ background-color: gray;
+}
+#box {
+ display:inline-block;
+ background-color: blue;
+ padding: 10px;
+ border: 5px solid black;
+ width: 300px;
+ height: 240px;
+ margin-top: 30px;
+ overflow: auto;
+}
+.content1 {
+ display:inline-block;
+ width: 100%;
+ height: 200px;
+ overflow: auto;
+ background-color: #90EE90; /* green */
+}
+.content2 {
+ display:inline-block;
+ width: 140px;
+ height: 200px;
+ overflow: auto;
+ background-color: #90EE90; /* green */
+}
+h1 {
+ margin-bottom: 30px;
+}
+img {display:inline-block;}
+ </style>
+</head>
+<body>
+<h1>Модель Box</h1>
+<div id="box">
+ <div class="content1">Еней був парубок моторний<br> І хлопець хоть куди козак,<br> Удавсь на всеє зле
+проворний, <br>Завзятійший од всіх бурлак.<br> Но греки, як спаливши Трою,<br> Зробили з неї скирту
+гною,<br> Він взявши торбу тягу дав;<br> Забравши деяких троянців, <br>Осмалених, як гиря, ланців,<br>
+П'ятами з Трої накивав.
+ </div>
+</div>
+<div id="box">
+ <img src="5.jpg" width=100%>
+ </div>
+<div id="box">
+<img src="Eneida_Bazylevych.jpg" width=120px>
 
-
-
-Hello, World!
-
-
-
-</BODY>
+<div class="content2">Еней був парубок моторний І хлопець хоть куди козак, Удавсь на всеє зле
+проворний, Завзятійший од всіх бурлак. Но греки, як спаливши Трою, Зробили з неї скирту гною, Він
+взявши торбу тягу дав; Забравши деяких троянців, Осмалених, як гиря, ланців, П'ятами з Трої накивав.
+ </div>
+</div>
+</body>
 </html>
