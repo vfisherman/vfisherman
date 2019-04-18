@@ -1,14 +1,62 @@
-<Html>
-<Head>
-<title> My first site </title>
-</Head>
-<BODY bgcolor=#FF0000>
-
-
-
-Hello, World!
-
-
-
-</BODY>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class work</title>
+	<style type="text/css">
+		body{
+			padding: 0;
+		}
+		div{
+			border: 1px solid black;
+			margin: 10px;
+			padding:3px;
+		}
+		#F{
+			background-color: #0ff;
+			display: flex;
+		    flex-flow: row nowrap;
+			align-items: stretch;
+			width:100%;
+			border:none;
+			padding:10px;
+			margin:0;
+		}
+		.little:first-child{
+			background-color: #00ff00;
+		}
+		.little:last-child{
+			background-color: #da70d6;
+		}
+		.little{
+			height: 100px;
+			flex:1;
+		}
+		#a{
+			background-color: #deb887;
+			height: 150px;
+			flex:2;
+		}
+		#b{
+			background-color: #ff7f50;
+			height: 150px;
+			flex:2;
+		}
+		#big{
+			background-color: #ffa500;
+			height:200px;
+			flex:3;
+		}
+	</style>
+</head>
+<body>
+	<h1>Positing Flex Elements</h1>
+	<div id="F">
+		<div class="little">1</div>
+		<div id="a">2</div>
+		<div id="big">3</div>
+		<div id="b">4</div>
+		<div class="little">5</div>
+	</div>
+</body>
 </html>
