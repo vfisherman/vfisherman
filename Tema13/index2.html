@@ -1,14 +1,50 @@
-<Html>
-<Head>
-<title> My first site </title>
-</Head>
-<BODY bgcolor=#FFA500>
-
-
-
-Hello, World!
-
-
-
-</BODY>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.row{
+			margin: 15px 1px;
+		}
+		img{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-3">
+			<img src="img.png">
+			<p>Some text under image</p>
+			<center><button onclick="change(1)">Change!</button></center>
+		</div>
+		<div class="col-md-3">
+			<img src="img.png">
+			<p>Some text under image</p>
+			<center><button onclick="change(2)">Change!</button></center>
+		</div>
+		<div class="col-md-3">
+			<img src="img.png">
+			<p>Some text under image</p>
+			<center><button onclick="change(3)">Change!</button></center>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function change(e){
+		switch(e){
+				case 1:
+					document.body.getElementsByTagName('div')[1].className="col-md-5";
+					break;
+				case 2:
+					document.body.getElementsByTagName("p")[1].style.color='#f00';
+					break;
+				case 3:
+					document.body.getElementsByTagName('img')[2].style.border='5px solid green';
+					break;
+			}		
+		};
+	</script>
+</body>
 </html>
